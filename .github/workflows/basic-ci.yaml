@@ -90,7 +90,7 @@ jobs:
         with:
           registry: ${{ env.REGISTRY }}
           username: ${{ github.actor }}
-          password: ${{ secrets.GHCR_TOKEN }}
+          password: ${{ secrets.CICD_TEST }}
 
       - name: Build and push Docker image
         working-directory: ./${{ env.PROJECT_DIR }}
